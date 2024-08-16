@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat App</title>
+
+
+
+<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/style.css">
+
+<script
+	src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+
+
+
+<script src="/webjars/jquery/3.6.1/dist/jquery.min.js"></script>
+<script src="/webjars/sockjs-client/1.5.1/sockjs.min.js"></script>
+<script src="/webjars/stomp-websocket/2.3.4/stomp.min.js"></script>
+<script type="text/javascript" src="/script.js"></script>
+
+
+</head>
+<body class="bg-dark">
+
+
+
+	<!-- 	<h1>This is the Chat App</h1> -->
+
+	<div id="name-from" class="bg-primary  d-flex">
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-md-4 offset-md-4">
+
+					<div class="input-group">
+
+
+						<input type="text" placeholder="Enter Your Name" id="name-value"
+							autofocus class="form-control" />
+
+
+
+						<div class="input-group-append">
+							<button class="btn btn-dark" id="login">Enter</button>
+
+
+
+						</div>
+
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+	<div id="chat-room" class="d-none">
+		<h1>Chat Room</h1>
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<div class="col-md-6 offset-md-3">
+
+					<div class="card  mt-3">
+
+						<div class="card-header">
+							<h3 id="name-title"></h3>
+
+						</div>
+
+						<div class="card-body">
+
+
+							<div class="input-group">
+
+
+								<input type="text" 
+								placeholder="Enter Your Message"
+									id="message-value" autofocus class="form-control" />
+
+								<div class="input-group-append" id = "btn-id">
+									<button class="btn btn-dark" id="send-btn">Send</button>
+									<button class="btn btn-dark" id="logout-btn">Logout</button>
+
+
+
+
+
+								</div>
+							</div>
+
+
+
+							<div class="table-responsive mt-3">
+
+								<table id="message-container-table">
+								</table>
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

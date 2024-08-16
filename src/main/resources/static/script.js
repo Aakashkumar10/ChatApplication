@@ -6,7 +6,7 @@ function sendMessage(){
 	let jsonOb={
 
 		name: localStorage.getItem("name"),
-		content:$("#message-value").val()
+		content:$("#message-value").val() 
 
 	}
 
